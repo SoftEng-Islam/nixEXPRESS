@@ -4,9 +4,9 @@
 	"description": "",
 	"main": "",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"start:dev": "nodemon ./src/index.cjs localhost 8080",
-		"start": "node ./src/index.cjs localhost 8080"
+		"dev": "ts-node-dev --respawn src/index.ts",
+		"build": "tsc",
+		"start": "node dist/index.js"
 	},
 	"repository": {
 		"type": "git",
@@ -19,11 +19,14 @@
 	},
 	"homepage": "https://github.com/SoftEng-Islam/nixEXPRESS#readme",
 	"dependencies": {
-		"express": "^5.1.0",
-		"typescript": "^5.8.3"
+		"express": "^5.1.0"
 	},
 	"devDependencies": {
-		"nodemon": "^3.1.10"
+		"@types/express": "^5.0.2",
+		"@types/node": "^22.15.19",
+		"nodemon": "^3.1.10",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^5.8.3"
 	},
 	"type": "module"
 }
