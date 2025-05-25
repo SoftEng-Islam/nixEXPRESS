@@ -28,7 +28,7 @@
             modules = [{
               # https://devenv.sh/reference/options/
               packages = with pkgs; [ nodejs ];
-              languages.javascript.bun.install.enable = true;
+              languages.javascript.bun.install.enable = false;
               languages.typescript.enable = true;
               languages.javascript.enable = true;
               languages.javascript.corepack.enable = true;
